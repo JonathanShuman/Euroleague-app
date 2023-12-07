@@ -1,0 +1,200 @@
+body {
+    background:  rgba(68, 4, 4, 0.635);
+    
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .modal.active {
+    display: block;
+  }
+
+  #add-team-btn {
+    width: 120px; /* Set the width to your desired size */
+    height: 120px; /* Set the height to your desired size */
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    margin: 20px;
+    
+  }
+
+  #score-board-header {
+    border-radius: 10px;
+    background-color: #3498db; /* Header background color */
+    color: #ffffff; /* Header text color */
+    padding: 10px 0; /* Adjust top and bottom padding */
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 20px;
+
+  }
+
+  .scoreboard-list {
+    list-style-type: none;
+    padding: 0;
+    border-radius: 10px;
+    
+}
+
+.scoreboard-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: black;
+    
+}
+
+.team-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.team-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 6px 60px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 150px;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+
+.points-container {
+    display: inline-block;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    width: 200px; /* Adjust width for the square size */
+    height: 40px; /* Adjust height for the square size */
+    background-color: green;
+    color: #ffffff;
+    text-align: center; /* Center the text horizontally */
+    line-height: 30px; /* Center the text vertically */
+    border-radius: 10px; /* Adjust border-radius for rounded corners */
+}
+
+.points {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    max-width: 800px;
+    
+}
+
+.coachp-button {
+    background-color: #dc8e35;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.player-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .player-table th, .player-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .player-table th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Additional styling for buttons */
+  .modal button {
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modal button:hover {
+    background-color: #0056b3;
+  }
+
+  .modal button {
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modal button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for 'V' (green) and 'X' (red) indicators */
+  .player-table td {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .player-table td.v {
+    color: green;
+  }
+  
+  .player-table td.x {
+    color: red;
+  }
+
